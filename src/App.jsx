@@ -164,16 +164,16 @@ export default function Local2GlobalLandingPage() {
             </div>
 
             <div className="mt-14 flex justify-center">
-              <div className="w-full max-w-2xl overflow-hidden rounded-[2rem] border border-slate-200 bg-black shadow-2xl shadow-slate-300/40">
-                <video
-                  src="https://sy0fekeclh6efqnn.public.blob.vercel-storage.com/loglo.mp4"
-                  controls
-                  className="w-full"
-                >
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
+  <div className="w-full md:w-[60%] lg:w-[45%] overflow-hidden rounded-[2rem] border border-slate-200 bg-black shadow-2xl shadow-slate-300/40">
+    <video
+      src="https://sy0fekeclh6efqnn.public.blob.vercel-storage.com/loglo.mp4"
+      controls
+      className="w-full"
+    >
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
           </div>
         </section>
 
