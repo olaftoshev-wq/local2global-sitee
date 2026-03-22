@@ -164,7 +164,7 @@ export default function Local2GlobalLandingPage() {
             </div>
 
             <div className="mt-14 flex justify-center">
-              <div className="w-full max-w-4xl overflow-hidden rounded-[2rem] border border-slate-200 bg-black shadow-2xl shadow-slate-300/40">
+              <div className="w-full max-w-2xl overflow-hidden rounded-[2rem] border border-slate-200 bg-black shadow-2xl shadow-slate-300/40">
                 <video
                   src="https://sy0fekeclh6efqnn.public.blob.vercel-storage.com/loglo.mp4"
                   controls
