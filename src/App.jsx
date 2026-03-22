@@ -72,7 +72,7 @@ export default function Local2GlobalLandingPage() {
   return (
     <div className="min-h-screen bg-white text-slate-900">
       <section className="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
           <div>
             <h1 className="text-2xl font-bold tracking-tight">Local2Global</h1>
             <p className="text-sm text-slate-600">
