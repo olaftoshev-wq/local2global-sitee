@@ -50,7 +50,7 @@ export default function App() {
 
       {/* HERO SECTION */}
       <section>
-        <div className="mx-auto max-w-6xl px-6 py-14 md:py-20 grid gap-10 md:grid-cols-2 md:items-center">
+        <div className="mx-auto max-w-6xl px-6 py-14 md:py-20 grid gap-10 md:grid-cols-2 md:items-start">
           <div>
             <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-slate-500">
               Direct contract. Background support.
@@ -84,15 +84,13 @@ export default function App() {
             </div>
 
             {/* === 🔥 VIDEO EXACTLY HERE (QIZIL RAMKA JOYI) === */}
-            <div className="my-10 w-full flex justify-center">
-              <video
-                controls
-                className="max-w-3xl w-full rounded-xl shadow-xl"
-                src="https://sy0fekeclh6efqnn.public.blob.vercel-storage.com/loglo.mp4"
-              >
-                Your browser does not support the video tag.
-              </video>
-            </div>
+            <div className="my-16 w-full flex justify-center">
+  https://sy0fekeclh6efqnn.public.blob.vercel-storage.com/loglo.mp4"
+    className="w-full max-w-5xl rounded-2xl shadow-2xl"
+  >
+    Your browser does not support the video tag.
+  </video>
+</div>
             {/* === END VIDEO === */}
 
           </div>
