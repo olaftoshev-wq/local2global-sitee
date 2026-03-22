@@ -42,4 +42,110 @@ export default function App() {
             </p>
           </div>
 
-          <a
+          mailto:hello@local2global.de"
+            className="rounded-2xl bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow-sm"
+          >
+            Kontakt
+          </a>
+        </div>
+      </section>
+
+      {/* HERO SECTION */}
+      <section>
+        <div className="mx-auto max-w-6xl px-6 py-14 md:py-20 grid gap-10 md:grid-cols-2 md:items-start">
+
+          {/* LEFT SIDE */}
+          <div>
+            <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-slate-500">
+              DIRECT CONTRACT. BACKGROUND SUPPORT.
+            </p>
+
+            <h2 className="text-4xl font-bold tracking-tight sm:text-5xl leading-tight">
+              Deutschsprachige Remote-Mitarbeiter für Kundenservice und IT-Support
+            </h2>
+
+            <p className="mt-6 max-w-xl text-base leading-7 text-slate-600">
+              Wir helfen deutschen Unternehmen dabei, direkt mit geprüften deutschsprachigen
+              Spezialisten aus Usbekistan zu arbeiten. Wir unterstützen bei Vorauswahl,
+              Sprachprüfung, Onboarding und lokaler Koordination.
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              mailto:hello@local2global.de?subject=Pilotprojekt%20anfragen"
+                className="rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium text-white shadow-sm"
+              >
+                Pilotprojekt anfragen
+              </a>
+
+              #services"
+                className="rounded-2xl border border-slate-300 px-5 py-3 text-sm font-medium text-slate-800"
+              >
+                Mehr erfahren
+              </a>
+            </div>
+
+            {/* === BIG CENTER VIDEO === */}
+            <div className="my-16 w-full flex justify-center">
+              https://sy0fekeclh6efqnn.public.blob.vercel-storage.com/loglo.mp4"
+                controls
+                className="w-full max-w-5xl rounded-2xl shadow-2xl"
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            {/* ========================== */}
+          </div>
+
+          {/* RIGHT SIDE — IMAGE (NOW CORRECTLY TOP-ALIGNED) */}
+          <div className="overflow-hidden rounded-[2rem] border border-slate-200 shadow-sm self-start">
+            https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=1400&q=80"
+              alt="Office teamwork"
+              className="h-full w-full object-cover"
+            />
+          </div>
+
+        </div>
+      </section>
+
+      {/* WHY LOCAL2GLOBAL */}
+      <section className="border-y bg-slate-50">
+        <div className="mx-auto max-w-6xl px-6 py-14 md:py-16 grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+          <div>
+            <h3 className="text-3xl font-bold tracking-tight">Warum Local2Global</h3>
+            <p className="mt-4 max-w-2xl text-slate-600 leading-7">
+              Wir verbinden deutsche Unternehmen mit motivierten deutschsprachigen
+              Remote-Spezialisten und reduzieren gleichzeitig den operativen Aufwand.
+            </p>
+
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              {benefits.map((item) => (
+                <div
+                  key={item}
+                  className="rounded-2xl bg-white px-4 py-3 text-sm text-slate-700 shadow-sm border border-slate-200"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-[2rem] border border-slate-200 shadow-sm bg-white">
+            https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section id="services">
+        <div className="mx-auto max-w-6xl px-6 py-16">
+          <h3 className="text-3xl font-bold tracking-tight">Unsere Einsatzbereiche</h3>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {serviceCards.map((card) => (
+              <div
+                key={card.title}
+                className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm"
+              >
+                <img src={card.image} alt={card.title} className="h-52 w-full object-cover" />
+                <div className="p-6">
+                  <h4 className="text-xl font-semibold">{card.title}</h4>
