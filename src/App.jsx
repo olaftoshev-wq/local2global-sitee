@@ -1,10 +1,10 @@
 <section>
   <div className="mx-auto max-w-6xl px-6 py-14 md:py-20 grid gap-10 md:grid-cols-2 md:items-start">
 
-    {/* LEFT COLUMN */}
+    {/* LEFT SIDE */}
     <div>
       <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-slate-500">
-        Direct contract. Background support.
+        DIRECT CONTRACT. BACKGROUND SUPPORT.
       </p>
 
       <h2 className="text-4xl font-bold tracking-tight sm:text-5xl leading-tight">
@@ -42,12 +42,13 @@
       </div>
     </div>
 
-    {/* RIGHT COLUMN — IMAGE NOW ALIGNS AT TOP */}
+    {/* RIGHT SIDE IMAGE */}
     <div className="overflow-hidden rounded-[2rem] border border-slate-200 shadow-sm self-start">
       https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=1400&q=80"
-        alt=""
+        alt="Team working"
         className="h-full w-full object-cover"
       />
     </div>
+
   </div>
 </section>
