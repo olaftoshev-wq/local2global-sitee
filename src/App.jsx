@@ -163,14 +163,13 @@ export default function Local2GlobalLandingPage() {
               </div>
             </div>
 
-           <div className="mt-14">
-  <div className="mx-auto w-full max-w-md md:max-w-lg lg:max-w-xl overflow-hidden rounded-[2rem] border border-slate-200 bg-black shadow-2xl">
-    <video
-      src="https://sy0fekeclh6efqnn.public.blob.vercel-storage.com/loglo.mp4"
-      controls
-      className="w-full h-auto"
-    />
-  </div>
+           <div className="mx-auto w-full max-w-sm md:max-w-md lg:max-w-lg overflow-hidden rounded-2xl border border-slate-200 bg-black shadow-2xl">
+  <video
+    src="https://sy0feekclhe6fenn.public.blob.vercel-storage.com/logic.mp4"
+    controls
+    className="w-full h-auto"
+  />
+</div>
 </div>
           </div>
         </section>
