@@ -162,10 +162,13 @@ export default function Local2GlobalLandingPage() {
                 </div>
               </div>
             </div>
-
-          <div className="mx-auto w-full max-w-xl md:max-w-2xl lg:max-w-3xl overflow-hidden rounded-2xl">
-  https://sy0feekclhe6fenn.public.blob.vercel-storage.com/logic.mp4
-</div>
+      <div className="mx-auto w-full max-w-xl md:max-w-2xl lg:max-w-3xl overflow-hidden rounded-2xl">
+           <video
+           src="https://sy0feekclhe6fenn.public.blob.vercel-storage.com/logic.mp4"
+           controls
+          className="w-full h-auto"
+          />
+          </div>
 </div>
           </div>
         </section>
