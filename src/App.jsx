@@ -29,144 +29,176 @@ export default function Local2GlobalLandingPage() {
     "Pilotprojekt mit geringem Risiko",
   ];
 
-  const process = [
-    "Sie teilen uns Ihr Profil und Ihren Bedarf mit.",
-    "Wir stellen 1–2 passende Kandidaten vor.",
-    "Der Mitarbeiter arbeitet direkt mit Ihrem Unternehmen.",
-    "Wir unterstützen im Hintergrund bei Qualität und Koordination.",
-  ];
-
-  const roles = [
-    "Kundenservice per Telefon, E-Mail und Chat",
-    "Call Center Inbound / Outbound",
-    "Backoffice Support",
-    "1st Level IT Support",
-  ];
-
-  const faqs = [
-    {
-      q: "Arbeiten Sie als klassische Agentur?",
-      a: "Nein. Der Mitarbeiter arbeitet direkt mit dem Kunden.",
-    },
-    {
-      q: "Wie schnell können Profile vorgestellt werden?",
-      a: "Oft innerhalb weniger Tage.",
-    },
-    {
-      q: "Was passiert bei Ausfall?",
-      a: "Schnelle Kommunikation va Ersatz.",
-    },
-  ];
-
-  const legalLinks = [
-    { title: "Impressum", href: "#impressum" },
-    { title: "Datenschutz", href: "#datenschutz" },
-  ];
-
-  const stats = [
-    ["DE", "Deutschsprachige Profile"],
-    ["24–72h", "erste Vorschläge"],
-    ["Pilot", "einfacher Einstieg"],
-  ];
-
   return (
     <div className="min-h-screen bg-white text-slate-900">
-
-      {/* ✅ YANGI PREMIUM HEADER */}
-      <section className="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-2">
-          
-          {/* LOGO + TEXT INLINE */}
-          <div className="flex items-center gap-3">
-            <h1 className="text-lg font-bold tracking-tight">Local2Global</h1>
-            <span className="hidden sm:block text-xs text-slate-500">
-              Deutschsprachige Remote Support Spezialisten
-            </span>
+      <section className="border-b bg-white/95 backdrop-blur">
+        <div className="mx-auto max-w-6xl px-6 py-6 flex items-center justify-between">
+          <div>
+            <h1 className="text-2xl font-bold tracking-tight">Local2Global</h1>
+            <p className="text-sm text-slate-600">Deutschsprachige Remote Support Spezialisten aus Usbekistan</p>
           </div>
-
-          {/* NAV */}
-          <nav className="hidden items-center gap-6 text-sm text-slate-600 md:flex">
-            <a href="#leistungen" className="hover:text-slate-900">Leistungen</a>
-            <a href="#ablauf" className="hover:text-slate-900">Ablauf</a>
-            <a href="#faq" className="hover:text-slate-900">FAQ</a>
-
-            {legalLinks.map((link) => (
-              <a key={link.title} href={link.href} className="hover:text-slate-900">
-                {link.title}
-              </a>
-            ))}
-
-            <a
-              href="#kontakt"
-              className="rounded-xl bg-slate-900 px-3 py-1.5 text-sm text-white"
-            >
-              Kontakt
-            </a>
-          </nav>
+          <a
+            href="mailto:hello@local2global.de"
+            className="rounded-2xl bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow-sm"
+          >
+            Kontakt
+          </a>
         </div>
       </section>
 
-      <main>
-        {/* HERO */}
-        <section className="relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-white" />
-          <div className="relative mx-auto max-w-6xl px-6 py-14 md:py-20">
-            <div className="grid gap-10 md:grid-cols-2 md:items-start">
-              <div>
-                <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">
-                  Direct contract. Background support.
-                </p>
-                <h2 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-                  Deutschsprachige Remote-Mitarbeiter für Kundenservice und IT-Support
-                </h2>
-                <p className="mt-6 max-w-xl text-base leading-7 text-slate-600">
-                  Wir helfen deutschen Unternehmen dabei, direkt mit geprüften Spezialisten zu arbeiten.
-                </p>
-
-                <div className="mt-8 flex flex-wrap gap-3">
-                  <a
-                    href="mailto:hello@local2global.de"
-                    className="rounded-2xl bg-slate-900 px-5 py-3 text-sm text-white"
-                  >
-                    Pilotprojekt anfragen
-                  </a>
-                  <a
-                    href="#leistungen"
-                    className="rounded-2xl border px-5 py-3 text-sm"
-                  >
-                    Mehr erfahren
-                  </a>
-                </div>
-
-                <div className="mt-8 grid gap-3 sm:grid-cols-3">
-                  {stats.map(([v, l]) => (
-                    <div key={l} className="border rounded-2xl p-4">
-                      <div className="font-bold">{v}</div>
-                      <div className="text-xs text-slate-500">{l}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <img
-                src="https://images.unsplash.com/photo-1552581234-26160f608093"
-                className="rounded-2xl"
-              />
-            </div>
-
-            <div className="mt-10 max-w-3xl mx-auto">
-              <video
-                src="https://sy0feekclhe6fenn.public.blob.vercel-storage.com/logic.mp4"
-                controls
-                className="w-full rounded-2xl"
-              />
+      <section>
+        <div className="mx-auto max-w-6xl px-6 py-14 md:py-20 grid gap-10 md:grid-cols-2 md:items-center">
+          <div>
+            <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-slate-500">
+              Direct contract. Background support.
+            </p>
+            <h2 className="text-4xl font-bold tracking-tight sm:text-5xl leading-tight">
+              Deutschsprachige Remote-Mitarbeiter für Kundenservice und IT-Support
+            </h2>
+            <p className="mt-6 max-w-xl text-base leading-7 text-slate-600">
+              Wir helfen deutschen Unternehmen dabei, direkt mit geprüften deutschsprachigen
+              Spezialisten aus Usbekistan zu arbeiten. Wir unterstützen bei Vorauswahl,
+              Sprachprüfung, Onboarding und lokaler Koordination.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href="mailto:hello@local2global.de?subject=Pilotprojekt%20anfragen"
+                className="rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium text-white shadow-sm"
+              >
+                Pilotprojekt anfragen
+              </a>
+              <a
+                href="#services"
+                className="rounded-2xl border border-slate-300 px-5 py-3 text-sm font-medium text-slate-800"
+              >
+                Mehr erfahren
+              </a>
             </div>
           </div>
-        </section>
-      </main>
 
-      <footer className="border-t py-8 text-center text-sm text-slate-600">
-        © Local2Global
+          <div className="overflow-hidden rounded-[2rem] border border-slate-200 shadow-sm">
+            <img
+              src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=1400&q=80"
+              alt="Professionelles Remote Support Team in einer modernen Arbeitsumgebung"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y bg-slate-50">
+        <div className="mx-auto max-w-6xl px-6 py-14 md:py-16 grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+          <div>
+            <h3 className="text-3xl font-bold tracking-tight">Warum Local2Global</h3>
+            <p className="mt-4 max-w-2xl text-slate-600 leading-7">
+              Wir verbinden deutsche Unternehmen mit motivierten deutschsprachigen Remote-
+              Spezialisten und reduzieren gleichzeitig den operativen Aufwand durch strukturierte
+              Auswahl, Vorbereitung und Koordination.
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              {benefits.map((item) => (
+                <div key={item} className="rounded-2xl bg-white px-4 py-3 text-sm text-slate-700 shadow-sm border border-slate-200">
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-[2rem] border border-slate-200 shadow-sm bg-white">
+            <img
+              src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80"
+              alt="Geschäftspartner bei einem professionellen Meeting"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div className="mx-auto max-w-6xl px-6 py-16">
+          <h3 className="text-3xl font-bold tracking-tight">Unsere Einsatzbereiche</h3>
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {serviceCards.map((card) => (
+              <div key={card.title} className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm">
+                <img src={card.image} alt={card.title} className="h-52 w-full object-cover" />
+                <div className="p-6">
+                  <h4 className="text-xl font-semibold">{card.title}</h4>
+                  <p className="mt-3 text-sm leading-6 text-slate-600">{card.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-slate-50 border-y">
+        <div className="mx-auto max-w-6xl px-6 py-16">
+          <h3 className="text-3xl font-bold tracking-tight">Unsere Leistungen</h3>
+          <div className="mt-8 grid gap-4 md:grid-cols-4">
+            {[
+              ["Vorauswahl", "Geeignete Kandidaten nach Anforderungsprofil"],
+              ["Sprachprüfung", "Deutschkenntnisse werden im Vorfeld geprüft"],
+              ["Onboarding", "Unterstützung beim Start und bei der Einrichtung"],
+              ["Koordination", "Lokale Betreuung und schnelle Kommunikation"],
+            ].map(([title, text]) => (
+              <div key={title} className="rounded-3xl bg-white p-5 shadow-sm border border-slate-200">
+                <h4 className="text-lg font-semibold">{title}</h4>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="mx-auto max-w-6xl px-6 py-16 grid gap-8 md:grid-cols-2 md:items-center">
+          <div className="rounded-3xl border border-slate-200 p-6 shadow-sm">
+            <h3 className="text-2xl font-bold tracking-tight">So funktioniert die Zusammenarbeit</h3>
+            <ol className="mt-4 space-y-3 text-slate-600">
+              <li>1. Sie teilen uns Ihr Profil und Ihren Bedarf mit.</li>
+              <li>2. Wir stellen 1–2 passende Kandidaten vor.</li>
+              <li>3. Der Mitarbeiter arbeitet direkt mit Ihrem Unternehmen.</li>
+              <li>4. Wir unterstützen im Hintergrund bei Qualität und Koordination.</li>
+            </ol>
+          </div>
+
+          <div className="overflow-hidden rounded-[2rem] border border-slate-200 shadow-sm">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80"
+              alt="Remote Team arbeitet gemeinsam an Kundenservice und Support"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-[2rem] bg-slate-900 px-8 py-10 text-white shadow-sm md:flex md:items-center md:justify-between">
+            <div>
+              <h3 className="text-2xl font-bold tracking-tight">Starten Sie mit einem Pilotprojekt</h3>
+              <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-300">
+                Testen Sie die Zusammenarbeit mit einem deutschsprachigen Remote-Spezialisten für
+                Kundenservice oder IT-Support.
+              </p>
+            </div>
+            <a
+              href="mailto:hello@local2global.de?subject=Pilotprojekt%20starten"
+              className="mt-6 inline-block rounded-2xl bg-white px-5 py-3 text-sm font-medium text-slate-900 md:mt-0"
+            >
+              Jetzt anfragen
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer className="border-t bg-slate-50">
+        <div className="mx-auto max-w-6xl px-6 py-10 text-sm text-slate-600">
+          <p className="font-medium text-slate-900">Local2Global</p>
+          <p>Deutschsprachige Remote Support Spezialisten aus Usbekistan</p>
+          <p className="mt-2">E-Mail: hello@local2global.de</p>
+          <p>Standort: Dessau-Roßlau / Berlin</p>
+        </div>
       </footer>
     </div>
   );
