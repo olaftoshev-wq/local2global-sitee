@@ -46,15 +46,15 @@ export default function Local2GlobalLandingPage() {
   const faqs = [
     {
       q: "Arbeiten Sie als klassische Agentur?",
-      a: "Nein. Der Mitarbeiter arbeitet direkt mit dem Kunden. Wir unterstützen bei Auswahl, Vorbereitung und lokaler Koordination.",
+      a: "Nein. Der Mitarbeiter arbeitet direkt mit dem Kunden.",
     },
     {
       q: "Wie schnell können Profile vorgestellt werden?",
-      a: "Je nach Bedarf oft innerhalb weniger Tage. Für ein Pilotprojekt können wir in der Regel schnell 1–2 passende Profile vorbereiten.",
+      a: "Oft innerhalb weniger Tage.",
     },
     {
       q: "Was passiert bei Ausfall?",
-      a: "Wir unterstützen mit schneller Kommunikation und, falls vereinbart, mit einer Ersatzlösung.",
+      a: "Schnelle Kommunikation va Ersatz.",
     },
   ];
 
@@ -65,40 +65,40 @@ export default function Local2GlobalLandingPage() {
 
   const stats = [
     ["DE", "Deutschsprachige Profile"],
-    ["24–72h", "erste passende Vorschläge"],
+    ["24–72h", "erste Vorschläge"],
     ["Pilot", "einfacher Einstieg"],
   ];
 
   return (
     <div className="min-h-screen bg-white text-slate-900">
 
-      {/* ✅ FAQAT HEADER KICHRAYTIRILDI */}
+      {/* ✅ YANGI PREMIUM HEADER */}
       <section className="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-2xl items-center justify-between px-6 py-2">
-          <div>
-            <h1 className="text-xl font-bold tracking-tight">Local2Global</h1>
-            <p className="text-xs text-slate-600 leading-tight">
-              Deutschsprachige Remote Support Spezialisten aus Usbekistan
-            </p>
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-2">
+          
+          {/* LOGO + TEXT INLINE */}
+          <div className="flex items-center gap-3">
+            <h1 className="text-lg font-bold tracking-tight">Local2Global</h1>
+            <span className="hidden sm:block text-xs text-slate-500">
+              Deutschsprachige Remote Support Spezialisten
+            </span>
           </div>
+
+          {/* NAV */}
           <nav className="hidden items-center gap-6 text-sm text-slate-600 md:flex">
-            <a href="#leistungen" className="transition hover:text-slate-900">
-              Leistungen
-            </a>
-            <a href="#ablauf" className="transition hover:text-slate-900">
-              Ablauf
-            </a>
-            <a href="#faq" className="transition hover:text-slate-900">
-              FAQ
-            </a>
+            <a href="#leistungen" className="hover:text-slate-900">Leistungen</a>
+            <a href="#ablauf" className="hover:text-slate-900">Ablauf</a>
+            <a href="#faq" className="hover:text-slate-900">FAQ</a>
+
             {legalLinks.map((link) => (
-              <a key={link.title} href={link.href} className="transition hover:text-slate-900">
+              <a key={link.title} href={link.href} className="hover:text-slate-900">
                 {link.title}
               </a>
             ))}
+
             <a
               href="#kontakt"
-              className="rounded-2xl bg-slate-900 px-4 py-2 font-medium text-white shadow-sm transition hover:opacity-90"
+              className="rounded-xl bg-slate-900 px-3 py-1.5 text-sm text-white"
             >
               Kontakt
             </a>
@@ -120,76 +120,53 @@ export default function Local2GlobalLandingPage() {
                   Deutschsprachige Remote-Mitarbeiter für Kundenservice und IT-Support
                 </h2>
                 <p className="mt-6 max-w-xl text-base leading-7 text-slate-600">
-                  Wir helfen deutschen Unternehmen dabei, direkt mit geprüften deutschsprachigen
-                  Spezialisten aus Usbekistan zu arbeiten. Wir unterstützen bei Vorauswahl,
-                  Sprachprüfung, Onboarding und lokaler Koordination.
+                  Wir helfen deutschen Unternehmen dabei, direkt mit geprüften Spezialisten zu arbeiten.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-3">
                   <a
-                    href="mailto:hello@local2global.de?subject=Pilotprojekt%20anfragen"
-                    className="rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
+                    href="mailto:hello@local2global.de"
+                    className="rounded-2xl bg-slate-900 px-5 py-3 text-sm text-white"
                   >
                     Pilotprojekt anfragen
                   </a>
                   <a
                     href="#leistungen"
-                    className="rounded-2xl border border-slate-300 px-5 py-3 text-sm font-medium text-slate-800 transition hover:bg-slate-50"
+                    className="rounded-2xl border px-5 py-3 text-sm"
                   >
                     Mehr erfahren
                   </a>
                 </div>
 
                 <div className="mt-8 grid gap-3 sm:grid-cols-3">
-                  {stats.map(([value, label]) => (
-                    <div
-                      key={label}
-                      className="rounded-3xl border border-slate-200 bg-white px-4 py-4 shadow-sm"
-                    >
-                      <div className="text-lg font-bold text-slate-900">{value}</div>
-                      <div className="mt-1 text-xs leading-5 text-slate-600">{label}</div>
+                  {stats.map(([v, l]) => (
+                    <div key={l} className="border rounded-2xl p-4">
+                      <div className="font-bold">{v}</div>
+                      <div className="text-xs text-slate-500">{l}</div>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="relative self-start md:-mt-10">
-                <div className="absolute -left-6 -top-6 hidden h-24 w-24 rounded-full bg-slate-100 blur-2xl md:block" />
-                <div className="absolute -bottom-6 -right-4 hidden h-28 w-28 rounded-full bg-slate-200 blur-2xl md:block" />
-                <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-xl shadow-slate-200/60">
-                  <img
-                    src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=1400&q=80"
-                    alt=""
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-              </div>
+              <img
+                src="https://images.unsplash.com/photo-1552581234-26160f608093"
+                className="rounded-2xl"
+              />
             </div>
 
-            <div className="mx-auto w-full max-w-xl md:max-w-2xl lg:max-w-3xl overflow-hidden rounded-2xl">
+            <div className="mt-10 max-w-3xl mx-auto">
               <video
                 src="https://sy0feekclhe6fenn.public.blob.vercel-storage.com/logic.mp4"
                 controls
-                className="w-full h-auto"
+                className="w-full rounded-2xl"
               />
             </div>
           </div>
         </section>
-
-        {/* qolgan hamma sectionlar o‘zgarmagan */}
       </main>
 
-      <footer className="border-t bg-slate-50">
-        <div className="mx-auto max-w-6xl px-6 py-10 text-sm text-slate-600 md:flex md:items-center md:justify-between">
-          <div>
-            <p className="font-medium text-slate-900">Local2Global</p>
-            <p>Deutschsprachige Remote Support Spezialisten aus Usbekistan</p>
-          </div>
-          <div className="mt-4 text-left md:mt-0 md:text-right">
-            <p>E-Mail: hello@local2global.de</p>
-            <p>Standort: Viethstraße 6, 06844 Dessau-Roßlau</p>
-          </div>
-        </div>
+      <footer className="border-t py-8 text-center text-sm text-slate-600">
+        © Local2Global
       </footer>
     </div>
   );
