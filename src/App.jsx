@@ -74,7 +74,43 @@ export default function Local2GlobalLandingPage() {
 
       {/* 🔥 YANGILANGAN HEADER */}
       <section className="sticky top-0 z-30 border-b border-slate-200 bg-white/80 backdrop-blur-md">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+  <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-2">
+
+    {/* LOGO */}
+    <div className="flex flex-col leading-tight">
+      <h1 className="text-xl font-bold tracking-tight">Local2Global</h1>
+      <p className="hidden md:block text-xs text-slate-500">
+        Deutschsprachige Remote Support Spezialisten aus Usbekistan
+      </p>
+    </div>
+
+    {/* NAV */}
+    <nav className="hidden items-center gap-5 text-sm text-slate-600 md:flex">
+      <a href="#leistungen" className="transition hover:text-slate-900">
+        Leistungen
+      </a>
+      <a href="#ablauf" className="transition hover:text-slate-900">
+        Ablauf
+      </a>
+      <a href="#faq" className="transition hover:text-slate-900">
+        FAQ
+      </a>
+
+      {legalLinks.map((link) => (
+        <a key={link.title} href={link.href} className="transition hover:text-slate-900">
+          {link.title}
+        </a>
+      ))}
+
+      <a
+        href="#kontakt"
+        className="rounded-xl bg-slate-900 px-4 py-2 text-white"
+      >
+        Kontakt
+      </a>
+    </nav>
+  </div>
+</section>
 
           {/* LOGO */}
           <div className="flex flex-col leading-tight">
