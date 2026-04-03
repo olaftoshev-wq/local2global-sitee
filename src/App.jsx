@@ -71,24 +71,22 @@ export default function Local2GlobalLandingPage() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900">
+      {/* ── HEADER: single compact row ── */}
       <section className="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-2xl items-center justify-between px-6 py-4">
-          <div>
-            <h1 className="text-2xl font-bold tracking-tight">Local2Global</h1>
-            <p className="text-sm text-slate-600">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-2">
+          {/* Logo + tagline inline */}
+          <div className="flex items-baseline gap-3 whitespace-nowrap">
+            <span className="text-lg font-bold tracking-tight">Local2Global</span>
+            <span className="hidden text-xs text-slate-500 sm:inline">
               Deutschsprachige Remote Support Spezialisten aus Usbekistan
-            </p>
+            </span>
           </div>
-          <nav className="hidden items-center gap-6 text-sm text-slate-600 md:flex">
-            <a href="#leistungen" className="transition hover:text-slate-900">
-              Leistungen
-            </a>
-            <a href="#ablauf" className="transition hover:text-slate-900">
-              Ablauf
-            </a>
-            <a href="#faq" className="transition hover:text-slate-900">
-              FAQ
-            </a>
+
+          {/* Nav */}
+          <nav className="hidden items-center gap-5 text-sm text-slate-600 md:flex">
+            <a href="#leistungen" className="transition hover:text-slate-900">Leistungen</a>
+            <a href="#ablauf" className="transition hover:text-slate-900">Ablauf</a>
+            <a href="#faq" className="transition hover:text-slate-900">FAQ</a>
             {legalLinks.map((link) => (
               <a key={link.title} href={link.href} className="transition hover:text-slate-900">
                 {link.title}
@@ -96,7 +94,7 @@ export default function Local2GlobalLandingPage() {
             ))}
             <a
               href="#kontakt"
-              className="rounded-2xl bg-slate-900 px-4 py-2 font-medium text-white shadow-sm transition hover:opacity-90"
+              className="rounded-2xl bg-slate-900 px-4 py-1.5 font-medium text-white shadow-sm transition hover:opacity-90"
             >
               Kontakt
             </a>
