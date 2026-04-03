@@ -72,7 +72,7 @@ export default function Local2GlobalLandingPage() {
   return (
     <div className="min-h-screen bg-white text-slate-900">
       <section className="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-2xl items-center justify-between px-6 py-4">
           <div>
             <h1 className="text-2xl font-bold tracking-tight">Local2Global</h1>
             <p className="text-sm text-slate-600">
@@ -164,7 +164,7 @@ export default function Local2GlobalLandingPage() {
             </div>
 
             <div className="mt-14 flex justify-center">
-              <div className="w-full max-w-6xl overflow-hidden rounded-[2rem] border border-slate-200 bg-black shadow-2xl shadow-slate-300/40">
+              <div className="w-full max-w-4xl overflow-hidden rounded-[2rem] border border-slate-200 bg-black shadow-2xl shadow-slate-300/40">
                 <video
                   src="https://sy0fekeclh6efqnn.public.blob.vercel-storage.com/loglo.mp4"
                   controls
@@ -178,7 +178,7 @@ export default function Local2GlobalLandingPage() {
         </section>
 
         <section className="border-y bg-slate-50">
-          <div className="mx-auto grid max-w-6xl gap-8 px-6 py-14 md:grid-cols-[1.1fr_0.9fr] md:items-center md:py-16">
+          <div className="mx-auto grid max-w-4xl gap-8 px-6 py-14 md:grid-cols-[1.1fr_0.9fr] md:items-center md:py-16">
             <div>
               <h3 className="text-3xl font-bold tracking-tight">Warum Local2Global</h3>
               <p className="mt-4 max-w-2xl leading-7 text-slate-600">
@@ -209,7 +209,7 @@ export default function Local2GlobalLandingPage() {
         </section>
 
         <section id="leistungen">
-          <div className="mx-auto max-w-6xl px-6 py-16">
+          <div className="mx-auto max-w-4xl px-6 py-16">
             <div className="max-w-3xl">
               <h3 className="text-3xl font-bold tracking-tight">Unsere Einsatzbereiche</h3>
               <p className="mt-4 leading-7 text-slate-600">
@@ -235,7 +235,7 @@ export default function Local2GlobalLandingPage() {
         </section>
 
         <section className="border-y bg-slate-50">
-          <div className="mx-auto grid max-w-6xl gap-8 px-6 py-16 md:grid-cols-2 md:items-start">
+          <div className="mx-auto grid max-w-4xl gap-8 px-6 py-16 md:grid-cols-2 md:items-start">
             <div>
               <h3 className="text-3xl font-bold tracking-tight">Geeignete Rollen</h3>
               <div className="mt-6 grid gap-3">
@@ -273,7 +273,7 @@ export default function Local2GlobalLandingPage() {
         </section>
 
         <section id="ablauf">
-          <div className="mx-auto grid max-w-6xl gap-8 px-6 py-16 md:grid-cols-2 md:items-center">
+          <div className="mx-auto grid max-w-4xl gap-8 px-6 py-16 md:grid-cols-2 md:items-center">
             <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
               <h3 className="text-2xl font-bold tracking-tight">
                 So funktioniert die Zusammenarbeit
@@ -298,7 +298,7 @@ export default function Local2GlobalLandingPage() {
         </section>
 
         <section className="border-y bg-slate-50">
-          <div className="mx-auto grid max-w-6xl gap-8 px-6 py-16 md:grid-cols-2 md:items-center">
+          <div className="mx-auto grid max-w-4xl gap-8 px-6 py-16 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-lg shadow-slate-200/60">
               <img
                 src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1400&q=80"
@@ -327,7 +327,7 @@ export default function Local2GlobalLandingPage() {
         </section>
 
         <section id="faq">
-          <div className="mx-auto max-w-6xl px-6 py-16">
+          <div className="mx-auto max-w-4xl px-6 py-16">
             <div className="max-w-3xl">
               <h3 className="text-3xl font-bold tracking-tight">Häufige Fragen</h3>
               <p className="mt-4 leading-7 text-slate-600">
@@ -350,7 +350,7 @@ export default function Local2GlobalLandingPage() {
         </section>
 
         <section id="kontakt">
-          <div className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="mx-auto max-w-4xl px-6 pb-16">
             <div className="rounded-[2rem] bg-slate-900 px-8 py-10 text-white shadow-xl shadow-slate-300/30 md:flex md:items-center md:justify-between md:gap-10">
               <div>
                 <h3 className="text-2xl font-bold tracking-tight">Lassen Sie uns sprechen</h3>
@@ -374,7 +374,7 @@ export default function Local2GlobalLandingPage() {
         </section>
 
         <section id="impressum" className="border-t bg-white">
-          <div className="mx-auto max-w-6xl px-6 py-16">
+          <div className="mx-auto max-w-4xl px-6 py-16">
             <div className="max-w-4xl rounded-[2rem] border border-slate-200 bg-slate-50 p-8 shadow-sm">
               <h3 className="text-3xl font-bold tracking-tight">Impressum</h3>
               <div className="mt-6 space-y-4 text-sm leading-7 text-slate-600">
@@ -406,7 +406,7 @@ export default function Local2GlobalLandingPage() {
         </section>
 
         <section id="datenschutz" className="border-t bg-slate-50">
-          <div className="mx-auto max-w-6xl px-6 py-16">
+          <div className="mx-auto max-w-4xl px-6 py-16">
             <div className="max-w-4xl rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
               <h3 className="text-3xl font-bold tracking-tight">Datenschutz</h3>
               <div className="mt-6 space-y-5 text-sm leading-7 text-slate-600">
