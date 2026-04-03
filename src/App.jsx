@@ -45,34 +45,45 @@ export default function Local2GlobalLandingPage() {
   return (
     <div className="min-h-screen bg-white text-slate-900">
 
-      {/* ✅ TO‘G‘RI HEADER (FAKAT BITTA) */}
-      <section className="sticky top-0 z-30 border-b border-slate-200 bg-white/80 backdrop-blur-md">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-2">
-
-          <div className="flex flex-col leading-tight">
-            <h1 className="text-xl font-bold tracking-tight">Local2Global</h1>
-            <p className="hidden md:block text-xs text-slate-500">
+      {/* ✅ HEADER EXACT LIKE THE REFERENCE IMAGE */}
+      <header className="sticky top-0 z-30 bg-white border-b border-slate-200">
+        <div className="mx-auto max-w-7xl px-8 py-4 flex items-center justify-between">
+          
+          {/* Logo + Subtitle */}
+          <div>
+            <h1 className="text-xl font-semibold">Local2Global</h1>
+            <p className="text-xs text-slate-500 mt-0.5">
               Deutschsprachige Remote Support Spezialisten
             </p>
           </div>
 
-          <nav className="hidden items-center gap-5 text-sm text-slate-600 md:flex">
+          {/* Navigation */}
+          <nav className="hidden md:flex items-center gap-7 text-sm text-slate-600">
             <a href="#leistungen" className="hover:text-slate-900">Leistungen</a>
+            <a href="#ablauf" className="hover:text-slate-900">Ablauf</a>
             <a href="#faq" className="hover:text-slate-900">FAQ</a>
 
             {legalLinks.map((link) => (
-              <a key={link.title} href={link.href} className="hover:text-slate-900">
+              <a 
+                key={link.title} 
+                href={link.href} 
+                className="hover:text-slate-900"
+              >
                 {link.title}
               </a>
             ))}
 
-            <a href="#kontakt" className="rounded-xl bg-slate-900 px-4 py-2 text-white">
+            <a
+              href="#kontakt"
+              className="rounded-xl bg-slate-900 text-white px-4 py-2 font-medium hover:bg-slate-800"
+            >
               Kontakt
             </a>
           </nav>
         </div>
-      </section>
+      </header>
 
+      {/* ======================= MAIN ======================= */}
       <main>
 
         {/* HERO */}
