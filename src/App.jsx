@@ -73,7 +73,7 @@ export default function Local2GlobalLandingPage() {
     <div className="min-h-screen bg-white text-slate-900">
       {/* ── HEADER: single compact row ── */}
       <section className="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-2">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-3">
           {/* Logo + tagline inline */}
           <div className="flex items-baseline gap-3 whitespace-nowrap">
             <span className="text-lg font-bold tracking-tight">Local2Global</span>
