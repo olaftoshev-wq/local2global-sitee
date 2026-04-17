@@ -1,4 +1,4 @@
-export default function Local2GlobalLandingPage() {
+export default function lokal2globalLandingPage() {
   const serviceCards = [
     {
       title: "Kundenservice",
@@ -76,7 +76,7 @@ export default function Local2GlobalLandingPage() {
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-6">
           {/* Logo + tagline inline */}
           <div className="flex items-baseline gap-3 whitespace-nowrap">
-            <span className="text-lg font-bold tracking-tight">Local2Global</span>
+            <span className="text-lg font-bold tracking-tight">lokal2global</span>
             <span className="hidden text-xs text-slate-500 sm:inline">
               Deutschsprachige Remote Support Spezialisten aus Usbekistan
             </span>
@@ -122,7 +122,7 @@ export default function Local2GlobalLandingPage() {
 
                 <div className="mt-8 flex flex-wrap gap-3">
                   <a
-                    href="mailto:hello@local2global.de?subject=Pilotprojekt%20anfragen"
+                    href="mailto:info@lokal2global.com?subject=Pilotprojekt%20anfragen"
                     className="rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
                   >
                     Pilotprojekt anfragen
@@ -178,7 +178,7 @@ export default function Local2GlobalLandingPage() {
         <section className="border-y bg-slate-50">
           <div className="mx-auto grid max-w-4xl gap-8 px-6 py-14 md:grid-cols-[1.1fr_0.9fr] md:items-center md:py-16">
             <div>
-              <h3 className="text-3xl font-bold tracking-tight">Warum Local2Global</h3>
+              <h3 className="text-3xl font-bold tracking-tight">Warum lokal2global</h3>
               <p className="mt-4 max-w-2xl leading-7 text-slate-600">
                 Wir verbinden deutsche Unternehmen mit motivierten deutschsprachigen Remote-
                 Spezialisten und reduzieren gleichzeitig den operativen Aufwand durch strukturierte
@@ -315,7 +315,7 @@ export default function Local2GlobalLandingPage() {
                 operativer Entlastung, bevor Sie weiter skalieren.
               </p>
               <a
-                href="mailto:hello@local2global.de?subject=Pilotprojekt%20starten"
+                href="mailto:info@lokal2global.com?subject=Pilotprojekt%20starten"
                 className="mt-6 inline-block rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
               >
                 Jetzt Pilot anfragen
@@ -358,10 +358,10 @@ export default function Local2GlobalLandingPage() {
                 </p>
               </div>
               <div className="mt-6 space-y-2 text-sm text-slate-200 md:mt-0">
-                <p>E-Mail: hello@local2global.de</p>
+                <p>E-Mail: info@lokal2global.com</p>
                 <p>Standort: Viethstraße 6, 06844 Dessau-Roßlau</p>
                 <a
-                  href="mailto:hello@local2global.de"
+                  href="mailto:info@lokal2global.com"
                   className="mt-2 inline-block rounded-2xl bg-white px-5 py-3 font-medium text-slate-900 transition hover:bg-slate-100"
                 >
                   Kontakt aufnehmen
@@ -380,7 +380,7 @@ export default function Local2GlobalLandingPage() {
                   <span className="font-semibold text-slate-900">Angaben gemäß § 5 TMG</span>
                 </p>
                 <p>
-                  Local2Global<br />
+                  lokal2global<br />
                   Mekhriniso Tojieva<br />
                   Viethstraße 6<br />
                   06844 Dessau-Roßlau<br />
@@ -388,7 +388,7 @@ export default function Local2GlobalLandingPage() {
                 </p>
                 <p>
                   <span className="font-semibold text-slate-900">Kontakt</span><br />
-                  E-Mail: hello@local2global.de<br />
+                  E-Mail: info@lokal2global.com<br />
                   Telefon: +49 163 7414395
                 </p>
                 <p>
@@ -415,8 +415,8 @@ export default function Local2GlobalLandingPage() {
                 <div>
                   <h4 className="text-lg font-semibold text-slate-900">1. Verantwortlicher</h4>
                   <p className="mt-2">
-                    Local2Global, Mekhriniso Tojieva, Viethstraße 6, 06844 Dessau-Roßlau, E-Mail:
-                    hello@local2global.de
+                    lokal2global, Mekhriniso Tojieva, Viethstraße 6, 06844 Dessau-Roßlau, E-Mail:
+                    info@lokal2global.com
                   </p>
                 </div>
                 <div>
@@ -455,11 +455,11 @@ export default function Local2GlobalLandingPage() {
       <footer className="border-t bg-slate-50">
         <div className="mx-auto max-w-6xl px-6 py-10 text-sm text-slate-600 md:flex md:items-center md:justify-between">
           <div>
-            <p className="font-medium text-slate-900">Local2Global</p>
+            <p className="font-medium text-slate-900">lokal2global</p>
             <p>Deutschsprachige Remote Support Spezialisten aus Usbekistan</p>
           </div>
           <div className="mt-4 text-left md:mt-0 md:text-right">
-            <p>E-Mail: hello@local2global.de</p>
+            <p>E-Mail: info@lokal2global.com</p>
             <p>Standort: Viethstraße 6, 06844 Dessau-Roßlau</p>
           </div>
         </div>
