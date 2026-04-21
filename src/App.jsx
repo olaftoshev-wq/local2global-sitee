@@ -71,30 +71,31 @@ export default function lokal2globalLandingPage() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900">
-      {/* ── HEADER: single compact row ── */}
-      <section className="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur">
+      {/* ── HEADER ── */}
+      <section className="sticky top-0 z-30 border-b border-blue-900" style={{ background: '#1a3a6b' }}>
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-6">
           {/* Logo + tagline inline */}
           <div className="flex items-baseline gap-3 whitespace-nowrap">
-            <span className="text-lg font-bold tracking-tight">lokal2global</span>
-            <span className="hidden text-xs text-slate-500 sm:inline">
+            <span className="text-lg font-bold tracking-tight text-white">lokal2global</span>
+            <span className="hidden text-xs sm:inline" style={{ color: 'rgba(255,255,255,0.65)' }}>
               Deutschsprachige Remote Support Spezialisten aus Usbekistan
             </span>
           </div>
 
           {/* Nav */}
-          <nav className="hidden items-center gap-5 text-sm text-slate-600 md:flex">
-            <a href="#leistungen" className="transition hover:text-slate-900">Leistungen</a>
-            <a href="#ablauf" className="transition hover:text-slate-900">Ablauf</a>
-            <a href="#faq" className="transition hover:text-slate-900">FAQ</a>
+          <nav className="hidden items-center gap-5 text-sm md:flex" style={{ color: 'rgba(255,255,255,0.82)' }}>
+            <a href="#leistungen" className="transition hover:text-white">Leistungen</a>
+            <a href="#ablauf" className="transition hover:text-white">Ablauf</a>
+            <a href="#faq" className="transition hover:text-white">FAQ</a>
             {legalLinks.map((link) => (
-              <a key={link.title} href={link.href} className="transition hover:text-slate-900">
+              <a key={link.title} href={link.href} className="transition hover:text-white">
                 {link.title}
               </a>
             ))}
             <a
               href="#kontakt"
-              className="rounded-2xl bg-slate-900 px-4 py-1.5 font-medium text-white shadow-sm transition hover:opacity-90"
+              className="rounded-2xl px-4 py-1.5 font-medium shadow-sm transition hover:bg-slate-100"
+              style={{ background: '#ffffff', color: '#1a3a6b' }}
             >
               Kontakt
             </a>
