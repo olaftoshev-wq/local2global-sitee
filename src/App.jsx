@@ -69,20 +69,19 @@ export default function lokal2globalLandingPage() {
     ["Pilot", "einfacher Einstieg"],
   ];
 
+  const brand = "#1a3a6b";
+
   return (
     <div className="min-h-screen bg-white text-slate-900">
       {/* ── HEADER ── */}
-      <section className="sticky top-0 z-30 border-b border-blue-900" style={{ background: '#1a3a6b' }}>
+      <section className="sticky top-0 z-30 border-b border-blue-900" style={{ background: brand }}>
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-6">
-          {/* Logo + tagline inline */}
           <div className="flex items-baseline gap-3 whitespace-nowrap">
             <span className="text-lg font-bold tracking-tight text-white">lokal2global</span>
             <span className="hidden text-xs sm:inline" style={{ color: 'rgba(255,255,255,0.65)' }}>
               Deutschsprachige Remote Support Spezialisten aus Usbekistan
             </span>
           </div>
-
-          {/* Nav */}
           <nav className="hidden items-center gap-5 text-sm md:flex" style={{ color: 'rgba(255,255,255,0.82)' }}>
             <a href="#leistungen" className="transition hover:text-white">Leistungen</a>
             <a href="#ablauf" className="transition hover:text-white">Ablauf</a>
@@ -95,7 +94,7 @@ export default function lokal2globalLandingPage() {
             <a
               href="#kontakt"
               className="rounded-2xl px-4 py-1.5 font-medium shadow-sm transition hover:bg-slate-100"
-              style={{ background: '#ffffff', color: '#1a3a6b' }}
+              style={{ background: '#ffffff', color: brand }}
             >
               Kontakt
             </a>
@@ -112,7 +111,7 @@ export default function lokal2globalLandingPage() {
                 <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">
                   Direct contract. Background support.
                 </p>
-                <h2 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
+                <h2 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl" style={{ color: brand }}>
                   Deutschsprachige Remote-Mitarbeiter für Kundenservice und IT-Support
                 </h2>
                 <p className="mt-6 max-w-xl text-base leading-7 text-slate-600">
@@ -124,7 +123,8 @@ export default function lokal2globalLandingPage() {
                 <div className="mt-8 flex flex-wrap gap-3">
                   <a
                     href="mailto:info@lokal2global.com?subject=Pilotprojekt%20anfragen"
-                    className="rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
+                    className="rounded-2xl px-5 py-3 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
+                    style={{ background: brand }}
                   >
                     Pilotprojekt anfragen
                   </a>
@@ -142,7 +142,7 @@ export default function lokal2globalLandingPage() {
                       key={label}
                       className="rounded-3xl border border-slate-200 bg-white px-4 py-4 shadow-sm"
                     >
-                      <div className="text-lg font-bold text-slate-900">{value}</div>
+                      <div className="text-lg font-bold" style={{ color: brand }}>{value}</div>
                       <div className="mt-1 text-xs leading-5 text-slate-600">{label}</div>
                     </div>
                   ))}
@@ -179,7 +179,7 @@ export default function lokal2globalLandingPage() {
         <section className="border-y bg-slate-50">
           <div className="mx-auto grid max-w-4xl gap-8 px-6 py-14 md:grid-cols-[1.1fr_0.9fr] md:items-center md:py-16">
             <div>
-              <h3 className="text-3xl font-bold tracking-tight">Warum lokal2global</h3>
+              <h3 className="text-3xl font-bold tracking-tight" style={{ color: brand }}>Warum lokal2global</h3>
               <p className="mt-4 max-w-2xl leading-7 text-slate-600">
                 Wir verbinden deutsche Unternehmen mit motivierten deutschsprachigen Remote-
                 Spezialisten und reduzieren gleichzeitig den operativen Aufwand durch strukturierte
@@ -187,16 +187,12 @@ export default function lokal2globalLandingPage() {
               </p>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 {benefits.map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm"
-                  >
+                  <div key={item} className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm">
                     {item}
                   </div>
                 ))}
               </div>
             </div>
-
             <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-lg shadow-slate-200/60">
               <img
                 src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80"
@@ -210,7 +206,7 @@ export default function lokal2globalLandingPage() {
         <section id="leistungen">
           <div className="mx-auto max-w-4xl px-6 py-16">
             <div className="max-w-3xl">
-              <h3 className="text-3xl font-bold tracking-tight">Unsere Einsatzbereiche</h3>
+              <h3 className="text-3xl font-bold tracking-tight" style={{ color: brand }}>Unsere Einsatzbereiche</h3>
               <p className="mt-4 leading-7 text-slate-600">
                 Unsere Kandidaten eignen sich besonders für kommunikative und strukturierte
                 Remote-Rollen mit deutschsprachigem Kundenkontakt.
@@ -218,13 +214,10 @@ export default function lokal2globalLandingPage() {
             </div>
             <div className="mt-8 grid gap-6 md:grid-cols-3">
               {serviceCards.map((card) => (
-                <div
-                  key={card.title}
-                  className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-lg shadow-slate-200/40 transition duration-300 hover:-translate-y-1"
-                >
+                <div key={card.title} className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-lg shadow-slate-200/40 transition duration-300 hover:-translate-y-1">
                   <img src={card.image} alt={card.title} className="h-52 w-full object-cover" />
                   <div className="p-6">
-                    <h4 className="text-xl font-semibold">{card.title}</h4>
+                    <h4 className="text-xl font-semibold" style={{ color: brand }}>{card.title}</h4>
                     <p className="mt-3 text-sm leading-6 text-slate-600">{card.text}</p>
                   </div>
                 </div>
@@ -236,21 +229,17 @@ export default function lokal2globalLandingPage() {
         <section className="border-y bg-slate-50">
           <div className="mx-auto grid max-w-4xl gap-8 px-6 py-16 md:grid-cols-2 md:items-start">
             <div>
-              <h3 className="text-3xl font-bold tracking-tight">Geeignete Rollen</h3>
+              <h3 className="text-3xl font-bold tracking-tight" style={{ color: brand }}>Geeignete Rollen</h3>
               <div className="mt-6 grid gap-3">
                 {roles.map((role) => (
-                  <div
-                    key={role}
-                    className="rounded-2xl border border-slate-200 bg-white px-5 py-4 text-slate-700 shadow-sm"
-                  >
+                  <div key={role} className="rounded-2xl border border-slate-200 bg-white px-5 py-4 text-slate-700 shadow-sm">
                     {role}
                   </div>
                 ))}
               </div>
             </div>
-
             <div>
-              <h3 className="text-3xl font-bold tracking-tight">Unsere Leistungen</h3>
+              <h3 className="text-3xl font-bold tracking-tight" style={{ color: brand }}>Unsere Leistungen</h3>
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 {[
                   ["Vorauswahl", "Geeignete Kandidaten nach Anforderungsprofil"],
@@ -258,11 +247,8 @@ export default function lokal2globalLandingPage() {
                   ["Onboarding", "Unterstützung beim Start und bei der Einrichtung"],
                   ["Koordination", "Lokale Betreuung und schnelle Kommunikation"],
                 ].map(([title, text]) => (
-                  <div
-                    key={title}
-                    className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"
-                  >
-                    <h4 className="text-lg font-semibold">{title}</h4>
+                  <div key={title} className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+                    <h4 className="text-lg font-semibold" style={{ color: brand }}>{title}</h4>
                     <p className="mt-2 text-sm leading-6 text-slate-600">{text}</p>
                   </div>
                 ))}
@@ -274,18 +260,17 @@ export default function lokal2globalLandingPage() {
         <section id="ablauf">
           <div className="mx-auto grid max-w-4xl gap-8 px-6 py-16 md:grid-cols-2 md:items-center">
             <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h3 className="text-2xl font-bold tracking-tight">
+              <h3 className="text-2xl font-bold tracking-tight" style={{ color: brand }}>
                 So funktioniert die Zusammenarbeit
               </h3>
               <ol className="mt-5 space-y-3 text-slate-600">
                 {process.map((step, index) => (
                   <li key={step} className="rounded-2xl bg-slate-50 px-4 py-3">
-                    <span className="font-semibold text-slate-900">{index + 1}.</span> {step}
+                    <span className="font-semibold" style={{ color: brand }}>{index + 1}.</span> {step}
                   </li>
                 ))}
               </ol>
             </div>
-
             <div className="overflow-hidden rounded-[2rem] border border-slate-200 shadow-lg shadow-slate-200/60">
               <img
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80"
@@ -306,7 +291,7 @@ export default function lokal2globalLandingPage() {
               />
             </div>
             <div>
-              <h3 className="text-3xl font-bold tracking-tight">Pilotprojekt mit geringem Risiko</h3>
+              <h3 className="text-3xl font-bold tracking-tight" style={{ color: brand }}>Pilotprojekt mit geringem Risiko</h3>
               <p className="mt-4 leading-7 text-slate-600">
                 Starten Sie mit einem kleinen Pilotprojekt und testen Sie die Zusammenarbeit mit
                 einem deutschsprachigen Remote-Spezialisten für Kundenservice oder IT-Support.
@@ -317,7 +302,8 @@ export default function lokal2globalLandingPage() {
               </p>
               <a
                 href="mailto:info@lokal2global.com?subject=Pilotprojekt%20starten"
-                className="mt-6 inline-block rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
+                className="mt-6 inline-block rounded-2xl px-5 py-3 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
+                style={{ background: brand }}
               >
                 Jetzt Pilot anfragen
               </a>
@@ -328,7 +314,7 @@ export default function lokal2globalLandingPage() {
         <section id="faq">
           <div className="mx-auto max-w-4xl px-6 py-16">
             <div className="max-w-3xl">
-              <h3 className="text-3xl font-bold tracking-tight">Häufige Fragen</h3>
+              <h3 className="text-3xl font-bold tracking-tight" style={{ color: brand }}>Häufige Fragen</h3>
               <p className="mt-4 leading-7 text-slate-600">
                 Hier finden Sie die wichtigsten Antworten zur Zusammenarbeit mit deutschsprachigen
                 Remote-Spezialisten aus Usbekistan.
@@ -336,11 +322,8 @@ export default function lokal2globalLandingPage() {
             </div>
             <div className="mt-8 grid gap-4">
               {faqs.map((item) => (
-                <div
-                  key={item.q}
-                  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
-                >
-                  <h4 className="text-lg font-semibold">{item.q}</h4>
+                <div key={item.q} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                  <h4 className="text-lg font-semibold" style={{ color: brand }}>{item.q}</h4>
                   <p className="mt-3 text-sm leading-6 text-slate-600">{item.a}</p>
                 </div>
               ))}
@@ -350,20 +333,21 @@ export default function lokal2globalLandingPage() {
 
         <section id="kontakt">
           <div className="mx-auto max-w-4xl px-6 pb-16">
-            <div className="rounded-[2rem] bg-slate-900 px-8 py-10 text-white shadow-xl shadow-slate-300/30 md:flex md:items-center md:justify-between md:gap-10">
+            <div className="rounded-[2rem] px-8 py-10 text-white shadow-xl md:flex md:items-center md:justify-between md:gap-10" style={{ background: brand }}>
               <div>
                 <h3 className="text-2xl font-bold tracking-tight">Lassen Sie uns sprechen</h3>
-                <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-300">
+                <p className="mt-3 max-w-2xl text-sm leading-6" style={{ color: 'rgba(255,255,255,0.8)' }}>
                   Gerne stellen wir Ihnen passende Profile für Kundenservice, Call Center,
                   Backoffice oder 1st Level IT Support vor.
                 </p>
               </div>
-              <div className="mt-6 space-y-2 text-sm text-slate-200 md:mt-0">
+              <div className="mt-6 space-y-2 text-sm md:mt-0" style={{ color: 'rgba(255,255,255,0.85)' }}>
                 <p>E-Mail: info@lokal2global.com</p>
                 <p>Standort: Viethstraße 6, 06844 Dessau-Roßlau</p>
                 <a
                   href="mailto:info@lokal2global.com"
-                  className="mt-2 inline-block rounded-2xl bg-white px-5 py-3 font-medium text-slate-900 transition hover:bg-slate-100"
+                  className="mt-2 inline-block rounded-2xl bg-white px-5 py-3 font-medium transition hover:bg-slate-100"
+                  style={{ color: brand }}
                 >
                   Kontakt aufnehmen
                 </a>
@@ -375,11 +359,9 @@ export default function lokal2globalLandingPage() {
         <section id="impressum" className="border-t bg-white">
           <div className="mx-auto max-w-4xl px-6 py-16">
             <div className="max-w-4xl rounded-[2rem] border border-slate-200 bg-slate-50 p-8 shadow-sm">
-              <h3 className="text-3xl font-bold tracking-tight">Impressum</h3>
+              <h3 className="text-3xl font-bold tracking-tight" style={{ color: brand }}>Impressum</h3>
               <div className="mt-6 space-y-4 text-sm leading-7 text-slate-600">
-                <p>
-                  <span className="font-semibold text-slate-900">Angaben gemäß § 5 TMG</span>
-                </p>
+                <p><span className="font-semibold" style={{ color: brand }}>Angaben gemäß § 5 TMG</span></p>
                 <p>
                   lokal2global<br />
                   Mekhriniso Tojieva<br />
@@ -388,12 +370,12 @@ export default function lokal2globalLandingPage() {
                   Deutschland
                 </p>
                 <p>
-                  <span className="font-semibold text-slate-900">Kontakt</span><br />
+                  <span className="font-semibold" style={{ color: brand }}>Kontakt</span><br />
                   E-Mail: info@lokal2global.com<br />
                   Telefon: +49 163 7414395
                 </p>
                 <p>
-                  <span className="font-semibold text-slate-900">Verantwortlich für den Inhalt</span><br />
+                  <span className="font-semibold" style={{ color: brand }}>Verantwortlich für den Inhalt</span><br />
                   Mekhriniso Tojieva
                 </p>
                 <p className="text-xs leading-6 text-slate-500">
@@ -407,21 +389,18 @@ export default function lokal2globalLandingPage() {
         <section id="datenschutz" className="border-t bg-slate-50">
           <div className="mx-auto max-w-4xl px-6 py-16">
             <div className="max-w-4xl rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-              <h3 className="text-3xl font-bold tracking-tight">Datenschutz</h3>
+              <h3 className="text-3xl font-bold tracking-tight" style={{ color: brand }}>Datenschutz</h3>
               <div className="mt-6 space-y-5 text-sm leading-7 text-slate-600">
                 <p>
                   Wir nehmen den Schutz Ihrer persönlichen Daten ernst. Personenbezogene Daten
                   werden auf dieser Website nur im technisch notwendigen Umfang verarbeitet.
                 </p>
                 <div>
-                  <h4 className="text-lg font-semibold text-slate-900">1. Verantwortlicher</h4>
-                  <p className="mt-2">
-                    lokal2global, Mekhriniso Tojieva, Viethstraße 6, 06844 Dessau-Roßlau, E-Mail:
-                    info@lokal2global.com
-                  </p>
+                  <h4 className="text-lg font-semibold" style={{ color: brand }}>1. Verantwortlicher</h4>
+                  <p className="mt-2">lokal2global, Mekhriniso Tojieva, Viethstraße 6, 06844 Dessau-Roßlau, E-Mail: info@lokal2global.com</p>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-slate-900">2. Erhebung von Daten</h4>
+                  <h4 className="text-lg font-semibold" style={{ color: brand }}>2. Erhebung von Daten</h4>
                   <p className="mt-2">
                     Beim Besuch dieser Website können technische Daten wie Browsertyp, Betriebssystem,
                     Uhrzeit des Zugriffs und IP-Adresse automatisch verarbeitet werden, soweit dies
@@ -429,14 +408,14 @@ export default function lokal2globalLandingPage() {
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-slate-900">3. Kontaktaufnahme</h4>
+                  <h4 className="text-lg font-semibold" style={{ color: brand }}>3. Kontaktaufnahme</h4>
                   <p className="mt-2">
                     Wenn Sie uns per E-Mail kontaktieren, werden Ihre Angaben ausschließlich zur
                     Bearbeitung Ihrer Anfrage gespeichert und verwendet.
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-slate-900">4. Ihre Rechte</h4>
+                  <h4 className="text-lg font-semibold" style={{ color: brand }}>4. Ihre Rechte</h4>
                   <p className="mt-2">
                     Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der
                     Verarbeitung sowie auf Widerspruch gegen die Verarbeitung Ihrer Daten im Rahmen
@@ -456,7 +435,7 @@ export default function lokal2globalLandingPage() {
       <footer className="border-t bg-slate-50">
         <div className="mx-auto max-w-6xl px-6 py-10 text-sm text-slate-600 md:flex md:items-center md:justify-between">
           <div>
-            <p className="font-medium text-slate-900">lokal2global</p>
+            <p className="font-medium" style={{ color: brand }}>lokal2global</p>
             <p>Deutschsprachige Remote Support Spezialisten aus Usbekistan</p>
           </div>
           <div className="mt-4 text-left md:mt-0 md:text-right">
