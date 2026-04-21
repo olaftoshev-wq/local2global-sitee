@@ -72,7 +72,7 @@ export default function lokal2globalLandingPage() {
   return (
     <div className="min-h-screen bg-white text-slate-900">
       {/* ── HEADER ── */}
-      <section className="sticky top-0 z-30 border-b border-blue-900" style={{ background: '#1a3a6b' }}>
+      <section className="sticky top-0 z-30 border-b border-blue-900" style={{ background: '#2e5490' }}>
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-6">
           {/* Logo + tagline inline */}
           <div className="flex items-baseline gap-3 whitespace-nowrap">
